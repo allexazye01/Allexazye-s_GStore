@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allexazye's Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Nama Store -->
+    <header class="store-name">
+        <h1>Allexazye's Store</h1>
+    </header>
+
+    <!-- Pop-up Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Login</h2>
+            <p>Allexazy's Store</p>
+            <form action="/submit-login" method="POST">
+                <input type="text" placeholder="Username/email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>**Login ini hanya bersifat opsional**</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#" id="loginBtn">Log-in</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+    <p> Website ini masih dalam tahap pengembangan, Sebagian besar fitur mungkin tidak berfungsi (Progress 30%)</p>
+    <!-- Pilihan Game Section -->
+    <section class="product-section">
+        <h2>Pilih Game Kamu</h2>
+        <div class="grid-container">
+            <!-- Row 1 -->
+            <div class="product-tile">
+                <a href="MOBILE LEGENDS/MLBB.html">
+                    <img src="MobileLegends.jpg" alt="Game 1" class="img">
+                    <div class="product-name">MOBILE LEGENDS</div>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="#">
+                    <img src="GenshinImpact.jpg" alt="Game 2" class="img">
+                    <div class="product-name">GENSHIN IMPACT</div>
+                </a>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="product-tile">
+                <a href="#">
+                    <img src="PUBG.jpg" alt="Game 3" class="img">
+                    <div class="product-name">PUBG MOBILE</div>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="#">
+                    <img src="COD.jpg" alt="Game 4" class="img">
+                    <div class="product-name">CALL OF DUTY</div>
+                </a>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="product-tile">
+                <a href="#">
+                    <img src="ZZZ.jpg" alt="Game 5" class="img">
+                    <div class="product-name">ZZZ</div>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="#">
+                    <img src="minecraft.jpg" alt="Game 6" class="img">
+                    <div class="product-name">MINECRAFT</div>
+                </a>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="product-tile">
+                <a href="#">
+                    <img src="FF.jpg" alt="Game 7" class="img">
+                    <div class="product-name">GAME BURIK</div>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="#">
+                    <img src="COC.jpg" alt="Game 8" class="img">
+                    <div class="product-name">CLASH OF CLANS</div>
+                </a>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="product-tile">
+                <a href="#">
+                    <img src="ClashRoyal.jpg" alt="Game 9" class="img">
+                    <div class="product-name">CLASH ROYAL</div>
+                </a>
+            </div>
+            <div class="product-tile">
+                <a href="#">
+                    <img src="HayDay.jpg" alt="Game 10" class="img">
+                    <div class="product-name">HAY DAY</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Allexazye's Store - All Rights Reserved</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* Basic styles for the page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Dark solid background */
+    color: #e0e0e0; /* Light text color */
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.store-name {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.8), rgba(0, 204, 255, 0.8)); /* Neon cyan gradient */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Stronger neon cyan glow */
+}
+
+h1, h2, h3, .store-name {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold; /* Bisa diatur sesuai kebutuhan */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border-radius: 8px; /* Rounded corners */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative; /* Position for the neon underline effect */
+}
+
+.navbar ul li a {
+    color: #00ccff; /* Neon blue links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; /* Add space for the underline */
+}
+
+.navbar ul li a:hover {
+    color: #ff00cc; /* Neon pink on hover */
+}
+
+/* Neon RGB Underline Effect */
+.navbar ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff); /* RGB gradient */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out; /* Animate the line */
+}
+
+.navbar ul li a:hover:after {
+    transform: scaleX(1); /* Show the line on hover */
+    transform-origin: bottom left;
+}
+
+/* Product Section */
+.product-section {
+    padding: 30px;
+    text-align: center;
+    min-height: 80vh;
+}
+
+/* Grid Container for products */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-tile {
+    width: 40%;
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    background-color:
+    
+}
+
+.product-tile a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+.product-tile a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  /* Holo effect */
+    border-radius: 8px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.product-tile:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+}
+
+.product-tile:hover a:before {
+    background:  /* Stronger holo effect */
+}
+
+.product-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Neon shadow */
+}
+
+.product-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white; /* Neon blue */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.product-name:hover {
+    color: #ff00cc; /* Neon pink on hover */
+}
+
+/* Fixed Footer */
+.footer {
+    background-color: #121212; /* Dark solid background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Fix footer to the bottom */
+    bottom: 0; /* Place it at the bottom of the viewport */
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure footer stays on top of other elements */
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon effect */
+    border-radius: 10px;
+}
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.modal {
+    display: none; /* Sembunyikan modal secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay transparan */
+}
+
+/* Modal content styles */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Sesuaikan lebar modal */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agar ada shadow */
+}
+
+/* Styling for form inputs */
+form input {
+    width: 100%; /* Pastikan input mengambil lebar penuh */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Border yang lebih halus */
+    border-radius: 5px; /* Radius pada input */
+    background-color: #f9f9f9; /* Warna latar belakang input */
+    box-sizing: border-box; /* Agar padding tidak menambah lebar total */
+}
+
+/* Styling for the submit button */
+form button {
+    width: 100%; /* Tombol juga lebar penuh */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Adjusting the close button */
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.close-btn:hover {
+    color: #333;
+    cursor: pointer;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allexazye's Store</title>
+    <link rel="stylesheet" href="MLBB.css">
+</head>
+<body>
+    <header>
+        <h1>Top-up Game MLBB</h1>
+    </header>
+
+<!-- Banner Diskon -->
+<section class="banner">
+    <div class="banner-slider">
+        <img src="banner-diskon1.jpg" alt="Diskon MLBB 1" class="banner-img">
+        <img src="banner-diskon2.jpg" alt="Diskon MLBB 2" class="banner-img">
+        <img src="banner-diskon3.jpg" alt="Diskon MLBB 3" class="banner-img">
+        <!-- Tambahkan banner lainnya sesuai kebutuhan -->
+    </div>
+</section>
+
+    <!-- Pengisian Player ID -->
+    <section class="player-info">
+        <h2>1. Masukkan ID Game Anda</h2>
+        <form id="player-form">
+            <label for="player-id">Player ID:</label>
+            <input type="text" id="player-id" name="player-id" placeholder="Masukkan Player ID" required>
+            <label for="server-id">Server ID:</label>
+            <input type="text" id="server-id" name="server-id" placeholder="Masukkan Server ID" required>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+<!-- Pilih Paket Diamond -->
+    <section class="diamond-packages">
+        <h2>2. Silahkan pilih paket diamond anda</h2>
+        <div class="diamond-grid">
+            <div class="diamond-item">
+                <input type="radio" id="package1" name="diamond-package" value="paket1">
+                <label for="package1">
+                    <img src="diamond1.jpg" alt="Diamond Paket 1">
+                    <p>Jumlah: 100</p>
+                    <p>Rp50.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package2" name="diamond-package" value="paket2">
+                <label for="package2">
+                    <img src="diamond1.jpg" alt="Diamond Paket 2">
+                    <p>Jumlah: 250</p>
+                    <p>Rp120.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package3" name="diamond-package" value="paket3">
+                <label for="package3">
+                    <img src="diamond1.jpg" alt="Diamond Paket 3">
+                    <p>Jumlah: 500</p>
+                    <p>Rp230.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package4" name="diamond-package" value="paket4">
+                <label for="package4">
+                    <img src="diamond1.jpg" alt="Diamond Paket 4">
+                    <p>Jumlah: 750</p>
+                    <p>Rp350.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package5" name="diamond-package" value="paket5">
+                <label for="package5">
+                    <img src="diamond1.jpg" alt="Diamond Paket 5">
+                    <p>Jumlah: 1.000</p>
+                    <p>Rp450.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package6" name="diamond-package" value="paket6">
+                <label for="package6">
+                    <img src="diamond1.jpg" alt="Diamond Paket 6">
+                    <p>Jumlah: 1.500</p>
+                    <p>Rp650.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package7" name="diamond-package" value="paket7">
+                <label for="package7">
+                    <img src="diamond1.jpg" alt="Diamond Paket 7">
+                    <p>Jumlah: 2.000</p>
+                    <p>Rp850.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package8" name="diamond-package" value="paket8">
+                <label for="package8">
+                    <img src="diamond1.jpg" alt="Diamond Paket 8">
+                    <p>Jumlah: 2.500</p>
+                    <p>Rp1.050.000</p>
+                </label>
+            </div>
+            <div class="diamond-item">
+                <input type="radio" id="package9" name="diamond-package" value="paket9">
+                <label for="package9">
+                    <img src="diamond1.jpg" alt="Diamond Paket 9">
+                    <p>Jumlah: 3.000</p>
+                    <p>Rp1.250.000</p>
+                </label>
+            </div>
+        </div>
+    </section>
+<!-- Pilih Metode Pembayaran -->
+    <section class="payment-methods">
+        <h2>3. Pilih metode pembayaran anda</h2>
+        <div class="payment-options">
+            <div class="payment-option" data-method="method1">
+                <img src="metode1.jpg" alt="Metode 1" class="payment-img">
+                <p>Metode 1</p>
+            </div>
+            <div class="payment-option" data-method="method2">
+                <img src="metode2.jpg" alt="Metode 2" class="payment-img">
+                <p>Metode 2</p>
+            </div>
+            <div class="payment-option" data-method="method3">
+                <img src="metode3.jpg" alt="Metode 3" class="payment-img">
+                <p>Metode 3</p>
+            </div>
+            <div class="payment-option" data-method="method4">
+                <img src="metode4.jpg" alt="Metode 4" class="payment-img">
+                <p>Metode 4</p>
+            </div>
+        </div>
+    </section>
+    <!-- Tombol Bayar Sekarang -->
+    <section class="payment-button">
+        <button id="pay-now">Bayar Sekarang</button>
+    </section>
+    <section>
+          <div>
+             <p>Home</p>
+             <p>Support©</p>
+          </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
